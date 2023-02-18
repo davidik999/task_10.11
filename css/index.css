@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+
+ul[class] {
+  list-style: none;
+}
+
+ul[class],
+li {
+  margin: 0;
+  padding: 0;
+
+}
+
+button {
+  margin-top: 10px;
+  background-color: #ba0009;
+  border: 2px solid #ba0009;
+  color: white;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-width: fit-content;
+}
+@keyframes pulse{
+  from {
+    box-shadow: 0 0 25px #ba0009, 0 0 50px #84cd1b;
+  }
+}
+button:focus {
+  animation: pulse 0.5s ease-in-out;
+}
+input {
+  margin: 5px 10px 5px 0;
+  border: 0;
+  padding: 0 10px;
+  line-height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  background-color: #f2f7f2d3;
+  color: rgb(252, 11, 11);
+  max-width: 200px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.wrapper__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Панель управления */
+.panel__wrapper {
+  flex-basis: 25%;
+  max-height: inherit;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom, rgb(241, 222, 113), rgb(108, 197, 142), rgb(87, 69, 184)
+  
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel__devtools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  margin-top: 10px;
+}
+
+/* Список экзотических фруктов */
+.wrapper__title {
+  font-size:30px;
+  
+}
+.fruits__wrapper {
+  flex-basis: 75%;
+  background: #fff;
+  max-height: inherit;
+  overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1471286274405-579f8d7132d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-size: 105%;
+
+}
+
+.fruits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: inherit;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.fruit__item {
+  margin: 10px;
+  padding: 10px;
+  width: fit-content;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.fruit_violet {
+  background: #8b00ff;
+}
+
+.fruit_green {
+  background: #84cd1b;
+}
+
+.fruit_carmazin {
+  background: #dc143c;
+}
+
+.fruit_yellow {
+  background: #ffd800;
+}
+
+.fruit_lightbrown {
+  background: #cd853f;
+}
+
+
+.fruit__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #fff;
+  height: 100%;
+  padding: 10px;
+}
